@@ -1,6 +1,6 @@
+using factorialService;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
-
-app.MapGet("/", () => "Hello World!");
-
+app.MapGet("/" ()=> "Here is Factorial(5)=" + factorialService.Factorial(5));
 app.Run();
