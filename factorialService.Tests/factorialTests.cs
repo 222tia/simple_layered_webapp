@@ -13,4 +13,9 @@ public class factorialTests
         Assert.Equal(120,Factorial.getFactorial(5))
     }
 
+    [Fact]
+    public void testFactorialValue_fail(){
+        Assert.NotEqual(100,Factorial.getFactorial(5))
+    }
+
 }
